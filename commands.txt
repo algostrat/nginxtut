@@ -1,0 +1,24 @@
+cd into nginxdocker
+
+to build:
+docker build --nocache  -tmynginx2 .
+
+to run:
+docker run --name mynginx2 -p 8080:80 -d mynginx2
+
+multiple ports:
+docker run --name mynginx2 -p 8080:80 -p 8088:8888 -d mynginx2
+
+multiple ports:
+docker run --name mynginx2 -p 8080:80 -p 8088:8888 -d mynginx2
+
+inside nginx container:
+
+restart nginx:
+nginx -s stop
+nginx # to rerun
+
+or 
+
+nging -s reload
+
